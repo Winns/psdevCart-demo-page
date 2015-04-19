@@ -1,0 +1,189 @@
+* { margin: 0; padding: 0; }
+
+body {
+	font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	color: #222;
+	background: #fff;
+}
+
+h2 { 
+	padding: 4px 0;
+	font-size: 16px; 
+}
+
+.g-row {
+	position: relative;
+	margin: 20px auto;
+	max-width: 900px;
+}
+
+.g-product-list, .g-cart {
+	vertical-align: top;
+
+	display: inline-block;
+	position: relative;
+	margin: 0 20px;
+}
+
+.g-product-list {
+	width: 120px;
+}
+
+	.g-product-list li {
+		display: block;
+		margin-bottom: 10px;
+		padding: 10px 0;
+		text-align: center;
+
+		border: 2px solid;
+	}
+
+	.g-product-list .name {
+		font-size: 14px;
+	}
+
+	.g-product-list .price {
+		padding: 10px 0 12px 0;
+		font-size: 14px;
+		font-weight: bold;
+		color: #AB6700;
+	}
+
+	.g-product-list .btn {
+		display: inline-block;
+		width: 50px;
+		height: 30px;
+		line-height: 30px;
+
+		border-radius: 2px;
+		cursor: pointer;
+		
+		font-size: 20px;
+
+		color: #fff;
+		background: #393F42;
+	}
+
+		.g-product-list .btn:hover,
+		.g-product-list .btn.active {
+			background: #2C8F30; 
+		}
+
+		.g-product-list .btn.active {
+			cursor: default;
+		}
+
+		.g-product-list .btn.active:before {
+			content: '\f00c';
+		}
+
+/* Cart */
+.g-cart {
+	width: 350px;
+}
+
+	.g-cart h2 {
+		position: relative;
+	}
+
+		.g-cart h2:after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+
+		.g-cart h2 .total {
+			padding: 0 12px;
+			color: #AB6700;
+		}
+
+		.g-cart h2 .clear {
+			cursor: pointer;
+		}
+
+			.g-cart h2 .clear:hover { 
+				color: #D52020; 
+			}
+
+		.g-cart h2 .total,
+		.g-cart h2 .clear {
+			float: right;
+		}
+
+	.g-cart li {
+		display: block;
+		position: relative;
+		margin-bottom: 10px;
+		height: 30px;
+
+		line-height: 30px;
+
+		border: 2px solid;
+	}
+
+		.g-cart li:after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+
+	.g-cart .name, 
+	.g-cart .price,
+	.g-cart .count {
+		float: left;
+		padding: 0 8px;
+		height: 100%;
+	}
+
+	.g-cart .name {
+		width: 100px;
+		font-size: 14px;
+	}
+
+	.g-cart .price {
+		width: 70px;
+		font-size: 14px;
+		font-weight: bold;
+		color: #AB6700;
+	}
+
+	.g-cart .count i {
+		margin: 0 4px;
+		width: 20px;
+
+		cursor: pointer;
+
+		line-height: 30px;
+		text-align: center;
+		font-size: 13px;
+	}
+
+		.g-cart .count i:hover {
+			color: #888;
+		}
+
+	.g-cart .count input {
+		width: 26px;
+		height: 20px;
+		text-align: center;
+
+		border: none;
+
+		color: #222;
+		background: #ccc;
+	}
+
+	.g-cart .remove {
+		float: right;
+		width: 30px;
+		line-height: 30px;
+
+		cursor: pointer;
+		text-align: center;
+		font-size: 13px;
+	}
+	
+		.g-cart .remove:hover {
+			color: #D52020;
+		}

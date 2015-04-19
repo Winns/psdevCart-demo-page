@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>psdevCart</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css">
+</head>
+<body>
+
+	<div class="g-row">
+
+		<div class="g-product-list">
+			<h2>Products</h2>
+			<ul>
+				<li>
+					<div class="name">One</div>
+					<div class="price">$500</div>
+					<i class="btn js-cart-add fa fa-shopping-cart" data-id="1"></i>
+				</li>
+				<li>
+					<div class="name">Two</div>
+					<div class="price">$1000</div>
+					<i class="btn js-cart-add fa fa-shopping-cart" data-id="2"></i>
+				</li>
+				<li>
+					<div class="name">Three</div>
+					<div class="price">$99</div>
+					<i class="btn js-cart-add fa fa-shopping-cart" data-id="3"></i>
+				</li>
+			</ul>
+		</div>
+
+		<div class="g-cart">
+			<h2>
+				Cart
+				<div class="clear js-cart-clear fa fa-times" title="Clear cart"></div>
+				<div class="total">$99</div>
+			</h2>
+
+			<ul></ul>
+		</div>
+
+	</div>
+
+	
+	<!-- JS -->
+	<script>
+		var products = {
+			1: { id: 1, name: 'One', price: 500 },
+			2: { id: 2, name: 'Two', price: 1000 },
+			3: { id: 3, name: 'Three', price: 99 }
+		};
+	</script>
+	<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<script src="js/psdev.cart.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>
